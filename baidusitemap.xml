@@ -4,12 +4,34 @@
 
     
   <url>
+    <loc>https://hainingbaby.github.io/diary/1104/</loc>
+    <lastmod>2018-11-05T10:52:53.739Z</lastmod>
+    <data>
+        <display>
+        <title>《人来人往》</title>
+        <pubTime>2018-11-04T14:53:13.000Z</pubTime>
+        
+        <tag>心情</tag>
+         
+        <tag>随笔</tag>
+         
+         
+           
+             
+              <breadCrumb title="diary" url="https://hainingbaby.github.io/categories/diary/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://hainingbaby.github.io/public/DeepCS/</loc>
-    <lastmod>2018-08-22T08:47:02.620Z</lastmod>
+    <lastmod>2018-10-19T09:41:18.241Z</lastmod>
     <data>
         <display>
         <title>利用深度学习找到你想要的代码</title>
-        <pubTime>2018-08-22T08:47:02.620Z</pubTime>
+        <pubTime>2018-10-19T09:41:18.241Z</pubTime>
         
         <tag>技术</tag>
          
