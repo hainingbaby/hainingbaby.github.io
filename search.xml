@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[在Github中Fork了一个仓库，如何在这个仓库变化之后，仍然保持代码一致]]></title>
     <url>%2Fpublic%2Fgithub-mem%2F</url>
-    <content type="text"><![CDATA[github操作备忘 假设要Fork的别人的repo为 A ，Fork到你的github之后叫做 a ，现在别人对 A 进行了更新，和 a 不一致了。如何保持一致？ 克隆 a 到本地 1git clone a的github地址 在本地添加最新的 A 为一个分支 1git remote add upstram [原项目地址] 其中upstream是自己任起的分支名字，一般用这个表示最上游分支。 fetch 这个最新的 A 到本地 1git fetch upstream 接下来要merge两个分支，先确保你现在已经处于要merge到的master分支下边(或者不是master是你自己的分支) 1git checkout master merge 1git merge upstream/master 推送到自己的github仓库 1git push origin master 结束。]]></content>
+    <content type="text"><![CDATA[github操作备忘 0X01.假设要Fork的别人的repo为 A ，Fork到你的github之后叫做 a ，现在别人对 A 进行了更新，和 a 不一致了。如何保持一致？ 克隆 a 到本地 1git clone a的github地址 在本地添加最新的 A 为一个分支 1git remote add upstram [原项目地址] 其中upstream是自己任起的分支名字，一般用这个表示最上游分支。 fetch 这个最新的 A 到本地 1git fetch upstream 接下来要merge两个分支，先确保你现在已经处于要merge到的master分支下边(或者不是master是你自己的分支) 1git checkout master merge 1git merge upstream/master 推送到自己的github仓库 1git push origin master 结束。 0X02.在本地修改之后如何撤销？ 方法1：123git checkout . #撤销对所有已修改但未提交的文件的修改，但不包括新增的文件git checkout [filename] #撤销对指定文件的修改 方法二：1git reset --hard [commit id] #commit id 通过 git log查看]]></content>
       <categories>
         <category>public</category>
       </categories>
@@ -47,13 +47,13 @@
   <entry>
     <title><![CDATA[《人来人往》]]></title>
     <url>%2Fdiary%2F1104%2F</url>
-    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-eavKcwLq"), narrow: false, autoplay: false, showlrc: false, music: { title: "人来人往", author: "陈奕迅", url: "http://www.170hi.com/kw/other.web.rs01.sycdn.kuwo.cn/resource/n2/73/95/1035977425.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); 闭起双眼你最挂念谁眼睛张开身边竟是谁感激车站里尚有月台 能让我们满足到流泪拥不拥有也会记住谁快不快乐有天总过去 爱若为了永不失去谁勉强娱乐过谁 谁也会走刚相恋的你先知我们未够借故松开我的手藏在贴纸相背后 我这苦心开过没有但试过散心旅游 如何答没有 闭起双眼你最挂念谁眼睛张开身边竟是谁 拥不拥有也会记住谁快不快乐留在身体里 爱若为了永不失去谁勉强娱乐过谁 爱若难以放进手里何不将这双手放进心里 时间会走究竟什么 是可以拥有 缠在那颈背后最美丽长发未留在我手我也开心饮过酒]]></content>
+    <content type="text"><![CDATA[var ap = new APlayer({ element: document.getElementById("aplayer-koeOfACK"), narrow: false, autoplay: false, showlrc: false, music: { title: "人来人往", author: "陈奕迅", url: "http://www.170hi.com/kw/other.web.rs01.sycdn.kuwo.cn/resource/n2/73/95/1035977425.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap); 闭起双眼你最挂念谁眼睛张开身边竟是谁感激车站里尚有月台 能让我们满足到流泪拥不拥有也会记住谁快不快乐有天总过去 爱若为了永不失去谁勉强娱乐过谁 谁也会走刚相恋的你先知我们未够借故松开我的手藏在贴纸相背后 我这苦心开过没有但试过散心旅游 如何答没有 闭起双眼你最挂念谁眼睛张开身边竟是谁 拥不拥有也会记住谁快不快乐留在身体里 爱若为了永不失去谁勉强娱乐过谁 爱若难以放进手里何不将这双手放进心里 时间会走究竟什么 是可以拥有 缠在那颈背后最美丽长发未留在我手我也开心饮过酒]]></content>
       <categories>
         <category>diary</category>
       </categories>
       <tags>
-        <tag>随笔</tag>
         <tag>心情</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -76,8 +76,8 @@
         <category>public</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>备忘录</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -88,8 +88,8 @@
         <category>public</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>备忘录</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>

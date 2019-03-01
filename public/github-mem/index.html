@@ -126,7 +126,7 @@
 <meta property="og:site_name" content="hainingbaby&#39;s notes">
 <meta property="og:description" content="github操作备忘">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-25T14:10:15.123Z">
+<meta property="og:updated_time" content="2019-03-01T10:51:21.424Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="在Github中Fork了一个仓库，如何在这个仓库变化之后，仍然保持代码一致">
 <meta name="twitter:description" content="github操作备忘">
@@ -436,7 +436,7 @@
 
       
         <p><center>github操作备忘</center><br><a id="more"></a></p>
-<p>假设要Fork的别人的repo为 A ，Fork到你的github之后叫做 a ，现在别人对 A 进行了更新，和 a 不一致了。如何保持一致？</p>
+<h4 id="0X01"><a href="#0X01" class="headerlink" title="0X01."></a>0X01.</h4><p>假设要Fork的别人的repo为 A ，Fork到你的github之后叫做 a ，现在别人对 A 进行了更新，和 a 不一致了。如何保持一致？</p>
 <ol>
 <li><p>克隆 a 到本地</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone a的github地址</span><br></pre></td></tr></table></figure>
@@ -461,6 +461,9 @@
 </li>
 </ol>
 <p>结束。</p>
+<h4 id="0X02"><a href="#0X02" class="headerlink" title="0X02."></a>0X02.</h4><p>在本地修改之后如何撤销？</p>
+<p>方法1：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout .  #撤销对所有已修改但未提交的文件的修改，但不包括新增的文件</span><br><span class="line"></span><br><span class="line">git checkout [filename] #撤销对指定文件的修改</span><br></pre></td></tr></table></figure></p>
+<p>方法二：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard [commit id] #commit id 通过 git log查看</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -555,8 +558,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -638,6 +650,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#0X01"><span class="nav-text">0X01.</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#0X02"><span class="nav-text">0X02.</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
