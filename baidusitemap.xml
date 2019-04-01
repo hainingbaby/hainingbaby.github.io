@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>https://hainingbaby.github.io/public/gnome-conf/</loc>
+    <lastmod>2019-04-01T16:09:41.400Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu变形记-unity变身gnome</title>
+        <pubTime>2019-04-01T14:21:30.000Z</pubTime>
+        
+        <tag>备忘录</tag>
+         
+         
+           
+             
+              <breadCrumb title="public" url="https://hainingbaby.github.io/categories/public/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://hainingbaby.github.io/public/github-mem/</loc>
     <lastmod>2019-03-01T10:51:21.424Z</lastmod>
     <data>
@@ -113,9 +133,9 @@
         <title>markdown语法的基本示例</title>
         <pubTime>2018-06-27T10:50:09.000Z</pubTime>
         
-        <tag>技术</tag>
-         
         <tag>备忘录</tag>
+         
+        <tag>技术</tag>
          
          
            
@@ -137,9 +157,9 @@
         <title>Hexo备忘录</title>
         <pubTime>2018-03-07T04:43:41.000Z</pubTime>
         
-        <tag>技术</tag>
-         
         <tag>备忘录</tag>
+         
+        <tag>技术</tag>
          
          
            
