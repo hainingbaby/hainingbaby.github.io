@@ -134,7 +134,7 @@
 <meta property="og:image" content="https://hainingbaby.github.io/uploads/gnome-extend.png">
 <meta property="og:image" content="https://hainingbaby.github.io/uploads/metacity.png">
 <meta property="og:image" content="https://hainingbaby.github.io/uploads/cover-alt-tab.png">
-<meta property="og:updated_time" content="2019-04-01T16:15:58.609Z">
+<meta property="og:updated_time" content="2019-04-03T03:42:11.386Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu变形记-unity变身gnome">
 <meta name="twitter:description" content="ubunt16.04桌面从 unity 变为 gnome">
@@ -453,7 +453,8 @@
 <li><a href="https://www.meiwen.com.cn/subject/ofkgjftx.html" target="_blank" rel="noopener">部分爬坑指南</a></li>
 <li><a href="https://itsfoss.com/best-gnome-extensions/" target="_blank" rel="noopener">Top 20 GNOME Extensions You Should Be Using Right Now</a></li>
 </ul>
-<h1 id="0x01-需要安装"><a href="#0x01-需要安装" class="headerlink" title="0x01 需要安装"></a>0x01 需要安装</h1><pre><code>sudo add-apt-repository ppa:gnome3-team/gnome3
+<p>下面开始折腾：</p>
+<h1 id="0x01-在命令行安装"><a href="#0x01-在命令行安装" class="headerlink" title="0x01 在命令行安装"></a>0x01 在命令行安装</h1><pre><code>sudo add-apt-repository ppa:gnome3-team/gnome3
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
@@ -461,11 +462,11 @@ sudo apt-get install gnome-session-flashback
 sudo apt-get install gnome-tweak-tool 
 sudo apt-get install gnome-shell
 sudo apt-get install gnome-shell-extensions
-</code></pre><p>选择GNOME Flashback：<br><img src="/uploads/metacity.png" alt="metacity-gnome"></p>
+</code></pre><p><b>如果用我推荐的主题的话，这里推荐选metacity，我之前用的gnome classic非常爆炸，后边会提到。</b>选择GNOME Flashback：<br><img src="/uploads/metacity.png" alt="metacity-gnome"></p>
 <p>现在，你可以轻松的在Unity和Gnome桌面之间切换。</p>
 <h1 id="0x02-遇到的问题"><a href="#0x02-遇到的问题" class="headerlink" title="0x02 遇到的问题"></a>0x02 遇到的问题</h1><ol>
-<li>安装时遇到依赖问题，显示某依赖包的已安装版本过高，正确解决办法是：找有依赖问题的包：<br> sudo apt-get remove [pkg]<br>然后重新运行安装命令(<b>不是安装pkg的命令</b>)</li>
-<li>在gnome环境下操作的时候，不要随便删gnome包，不然可能连渣都不剩，我运气好，当时遇到了问题，全删了，结果啥都没有了，后来不放弃重新安装了一遍，莫名其妙好了，我猜是因为我安装的主题针对metacity这种gnome作了css优化，但我操作都是在一个gnome-classic环境里进行的，所以出了问题。</li>
+<li>安装时遇到依赖问题，报错显示<b>某依赖包的已安装版本过高</b>，正确解决办法是先卸载有依赖问题的包pkg：<br> sudo apt-get remove [pkg]<br>然后重新运行0x01中出错的命令，这样他就会重新下载对应版本的依赖包。</li>
+<li>在gnome环境下操作的时候，不要随便删与gnome相关的包，不然可能连渣都不剩，我运气好，当时遇到了问题，全删了，结果啥都没有了，后来不放弃重新安装了一遍，莫名其妙好了，我猜是因为我安装的主题针对metacity这种gnome作了css优化，但我操作都是在一个gnome-classic环境里进行的，所以出了问题。</li>
 </ol>
 <h1 id="0x03-安装之后"><a href="#0x03-安装之后" class="headerlink" title="0x03 安装之后"></a>0x03 安装之后</h1><p>接下来就是使用gnome-shell-extensions进行桌面优化。所使用的插件见上方效果图和链接。<br><img src="/uploads/cover-alt-tab.png" alt="cover-alt-tab"></p>
 <p><em>last update at: 2019/04/01 by haining</em></p>
@@ -661,7 +662,7 @@ sudo apt-get install gnome-shell-extensions
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图"><span class="nav-text">效果图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gnome-tweak-tool配置"><span class="nav-text">gnome-tweak-tool配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gnome-shell-extensions推荐"><span class="nav-text">gnome-shell-extensions推荐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-text">友情链接</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-需要安装"><span class="nav-text">0x01 需要安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-遇到的问题"><span class="nav-text">0x02 遇到的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-安装之后"><span class="nav-text">0x03 安装之后</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#效果图"><span class="nav-text">效果图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gnome-tweak-tool配置"><span class="nav-text">gnome-tweak-tool配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#gnome-shell-extensions推荐"><span class="nav-text">gnome-shell-extensions推荐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-text">友情链接</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x01-在命令行安装"><span class="nav-text">0x01 在命令行安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x02-遇到的问题"><span class="nav-text">0x02 遇到的问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#0x03-安装之后"><span class="nav-text">0x03 安装之后</span></a></div>
             
 
           </div>
