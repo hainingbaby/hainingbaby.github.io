@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[C++几种排序算法]]></title>
+    <url>%2Fpublic%2Fsort%2F</url>
+    <content type="text"><![CDATA[几种排序算法加代码 插入排序Insertion-sort(A) 复杂度： O(N^2) author: haining data : 2019-10-30 插入排序就像打扑克牌时的抓牌过程一样，假设刚开始手里只有一张牌（数组的开始元素）． 之后我每当摸一张牌（从数组取出下一个元素），就从手里存在的最后一张牌开始，依次往前找,如果新摸的这张牌比当前看的手里的牌要小，则把当前看的这张牌往后移动一个位置，再继续往前找． // A[pre+1] = A[pre] 直到看到一张牌X比新摸的这张小，说明新摸的牌应该在这张牌的后边插入．此时X后边的牌都往后移动了一个位置，把新摸的牌直接插入到腾出来的这个位置即可．// A[pre+1] = now; 每次新摸一张牌，都重复上述过程，最终就得到排序后的结果． 这么做的合理性在于，从一开始摸牌就保证了，每次摸牌之前，手里的牌都是已经排好序的，所以可以按次序访问手里的牌，插入到合适的位置． 最差情况下，数组是逆序的，复杂度为 1 + 2 + 3 + 4 + … + N = n(n+1)/2 .一般认为复杂度为 N^2 . 123456789101112131415# include &lt;stdio.h&gt;# include &lt;iostream&gt;using namespace std;void insertion_sort(int A[], int r)&#123; for(int j = 1; j &lt; r; j++)&#123; int now = A[j]; int pre = j - 1; while(pre &gt;= 0 &amp;&amp; A[pre] &gt; now)&#123; A[pre+1] = A[pre]; pre--; &#125; A[pre+1] = now; &#125;&#125; 冒泡排序，顾名思义就像是冒泡的过程，遍历ｎ次数组（ｎ为数组元素个数），每次把最小的元素冒泡到正确位置． 过程为： 每次遍历，从数组末尾开始递减进行．也就是说，末尾元素和前一个元素比较，前一元素和前前元素再比较，以此类推．如果后一元素比前一元素小，则两元素位置互换．否则不作操作．这样，每次比较都会把小数放到前边，最终，就把最小的数推到了最前边． 重复上述过程ｎ次，数组得到排序．注意到这种算法的复杂度是 1 + 2 + 3 + … + n-1 = (n^2)/2 . 1234567891011void bubble_sort(int A[], int r)&#123; for(int i = 0; i &lt; r; i++)&#123; for(int j = r - 1; j &gt; i; j--)&#123; if(A[j] &lt; A[j-1])&#123; int tmp = A[j-1]; A[j-1] = A[j]; A[j] = tmp; &#125; &#125; &#125;&#125; 快速排序采用分治的思想，任意选定一个数作为锚点（通常是数组的第一个数l，或者最后一个数r，或者中间位置的数(l+r+1)/2）． 这里选定中间位置的数为锚点，遍历数组，那么肯定会存在一个位置，在这个位置之前的数全部小于锚点，位置之后的数全部大于锚点． 这里用了一种比较优雅的找位置的方法，设定了两个指针，同时向中间走，遇到不符合以上要求的位置则停下，两个指针的值交换，然后继续． 找到这个位置之后，把从数组开始到此位置的子数组再进行函数递归调用，这样，直到子数组只剩两个数或者一个数，那么左边的数组就排好了； 再把从该位置到结束位置的子数组进行函数递归调用，同理，右边的数组也就有序了．完成排序过程． 复杂度为 O(Nlog(2/n)). 注意，这种方法会有很多边界问题，不加注意会进入死循环．比如当锚点选择数组第一个数ｌ的时候，递归调用quick_sort(A,l,i－１);quick_sort(A,i,r)就会出错陷入死循环，可以自己用{1, 2}这个数组跑一下感受一下．这种情况改成(A,l,j);(A,j＋１,r)就不会出问题．同样，当锚点选择数组最后一个数ｒ的时候，递归调用quick_sort(A,l,ｊ);quick_sort(A,j+1,r)就会出错陷入死循环. 更省事的一种方法可以不用双指针，每次迭代多开两个数组ａ，ｂ，一个存小的数，一个存大的数，然后把a,b作为参数传进递归，一样的效果，只是多了一些开销． 123456789101112131415161718192021222324252627282930void quick_sort(int A[], int l, int r)&#123; if(l &gt;= r) return; int x = A[(l+r+1)/ 2], i = l - 1, j = r + 1; while(i &lt; j)&#123; do i++; while(A[i] &lt; x); do j--; while(A[j] &gt; x); if(i &lt; j) swap(A[i],A[j]); &#125; quick_sort(A,l,i - 1); quick_sort(A,i,r);&#125;int main()&#123; int A[100005]; int num = 0; int index; scanf("%d",&amp;num); for(index = 0; index &lt; num; index++) scanf("%d",&amp;A[index]); quick_sort(A,0,index-1); // insertion_sort(A,index); // bubble_sort(A,index); for(int i = 0; i &lt; index; i++) printf("%d ",A[i]); printf("\n"); return 0;&#125;]]></content>
+      <categories>
+        <category>public</category>
+      </categories>
+      <tags>
+        <tag>［技术,备忘录］</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Leetcode | Roman to Integer]]></title>
     <url>%2Fpublic%2F13_Roman_to_Integer%2F</url>
     <content type="text"><![CDATA[13. Roman to IntegerRoman numerals are represented by seven different symbols: I, V, X, L, C, D and M. Symbol ValueI 1V 5X 10L 50C 100D 500M 1000For example, two is written as II in Roman numeral, just two one’s added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used: I can be placed before V (5) and X (10) to make 4 and 9.X can be placed before L (50) and C (100) to make 40 and 90.C can be placed before D (500) and M (1000) to make 400 and 900.Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999. Example 1: Input: “III”Output: 3Example 2: Input: “IV”Output: 4Example 3: Input: “IX”Output: 9Example 4: Input: “LVIII”Output: 58Explanation: L = 50, V= 5, III = 3.Example 5: Input: “MCMXCIV”Output: 1994Explanation: M = 1000, CM = 900, XC = 90 and IV = 4. 刚开始我写了一种，简单粗暴：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354class Solution &#123;public: /** * roman to int * @hainingbaby * @Time 2019-04-10T22:21:24+0800 * @param s [description] * @return [description] */ int romanToInt(string s) &#123; int res = 0; for(int i = 0; i &lt; s.length(); i++)&#123; if(s[i] == 'I') res += 1; if(s[i] == 'V') if(i &gt; 0 &amp;&amp; s[i-1] == 'I') res += 3; else res += 5; if(s[i] == 'X') if(i &gt; 0 &amp;&amp; s[i-1] == 'I') res += 8; else res += 10; if(s[i] == 'L') if(i &gt; 0 &amp;&amp; s[i-1] == 'X') res += 30; else res += 50; if(s[i] == 'C') if(i &gt; 0 &amp;&amp; s[i-1] == 'X') res += 80; else res += 100; if(s[i] == 'D') if(i &gt; 0 &amp;&amp; s[i-1] == 'C') res += 300; else res += 500; if(s[i] == 'M') if(i &gt; 0 &amp;&amp; s[i-1] == 'C') res += 800; else res += 1000; &#125; return res; &#125;&#125;; 提交之后的结果： 后来网上搜了一下，简直优美，我写不出来的原因就是脑子里连基本的Map概念都没有…. Solution 2:12345678910111213141516class Solution &#123;public: int romanToInt(string s) &#123; map&lt;char, int&gt; m&#123;&#123;&apos;I&apos;, 1&#125;, &#123;&apos;V&apos;, 5&#125;, &#123;&apos;X&apos;, 10&#125;, &#123;&apos;L&apos;, 50&#125;, &#123;&apos;C&apos;, 100&#125;, &#123;&apos;D&apos;, 500&#125;, &#123;&apos;M&apos;, 1000&#125;&#125;; int res = 0; for (int i = 0; i &lt; s.length(); i++) &#123; res += m[s[i]]; if (i &gt; 0 &amp;&amp; m[s[i]] &gt; m[s[i - 1]]) res -= 2 * m[s[i - 1]]; &#125; return res; &#125;&#125;; 但是跑出来的结果是： 对于这种简单的枚举问题有时候简单粗暴可能更节省资源..]]></content>
@@ -76,8 +87,8 @@
         <category>public</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>备忘录</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
   <entry>
@@ -88,8 +99,8 @@
         <category>public</category>
       </categories>
       <tags>
-        <tag>技术</tag>
         <tag>备忘录</tag>
+        <tag>技术</tag>
       </tags>
   </entry>
 </search>

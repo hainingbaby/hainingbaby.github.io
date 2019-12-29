@@ -107,7 +107,7 @@
 
 
 
-  <meta name="keywords" content="top,文章阅读量排行" />
+  <meta name="keywords" content="C++,排序,插入排序,快速排序" />
 
 
 
@@ -118,18 +118,18 @@
 
 
 
-<meta name="description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
-<meta name="keywords" content="top,文章阅读量排行">
-<meta property="og:type" content="website">
-<meta property="og:title" content="热门文章">
-<meta property="og:url" content="https://hainingbaby.github.io/top/index.html">
+<meta name="description" content="几种排序算法加代码">
+<meta name="keywords" content="C++,排序,插入排序,快速排序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++几种排序算法">
+<meta property="og:url" content="https://hainingbaby.github.io/public/sort/index.html">
 <meta property="og:site_name" content="hainingbaby&#39;s notes">
-<meta property="og:description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
+<meta property="og:description" content="几种排序算法加代码">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-09T08:14:37.160Z">
+<meta property="og:updated_time" content="2019-12-29T13:24:39.063Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="热门文章">
-<meta name="twitter:description" content="AV.initialize(&quot;fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz&quot;, &quot;Os4H2jLEsRxxX1HJI6KoHpLu&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);   query.notEqualTo(&apos;id&apos;,0);   query.d">
+<meta name="twitter:title" content="C++几种排序算法">
+<meta name="twitter:description" content="几种排序算法加代码">
 
 
 
@@ -159,13 +159,13 @@
 
 
 
-  <link rel="canonical" href="https://hainingbaby.github.io/top/"/>
+  <link rel="canonical" href="https://hainingbaby.github.io/public/sort/"/>
 
 
 
 
 
-  <title>热门文章 | hainingbaby's notes</title>
+  <title>C++几种排序算法 | hainingbaby's notes</title>
   
 
 
@@ -323,56 +323,201 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://hainingbaby.github.io/public/sort/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hainingbaby">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hainingbaby's notes">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">热门文章</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p><div id="top"></div></p>
-<script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-<script>AV.initialize("fERC1JtuRMhspQkKmWB4CFYR-gzGzoHsz", "Os4H2jLEsRxxX1HJI6KoHpLu");</script>
-<script type="text/javascript">
-  var time=0
-  var title=""
-  var url=""
-  var query = new AV.Query('Counter');
-  query.notEqualTo('id',0);
-  query.descending('time');
-  query.limit(1000);
-  query.find().then(function (todo) {
-    for (var i=0;i<1000;i++){
-      var result=todo[i].attributes;
-      time=result.time;
-      title=result.title;
-      url=result.url;
-      var content="<a href='"+"https://hainingbaby.github.io/"+url+"'>"+title+"</a>"+"<br />"+"<font color='#555'>"+"阅读次数："+time+"</font>"+"<br /><br />";
-      document.getElementById("top").innerHTML+=content
-    }
-  }, function (error) {
-    console.log("error");
-  });
-</script>
+          <h1 class="post-title" itemprop="name headline">C++几种排序算法</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-29T21:16:00+08:00">
+                2019-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/public/" itemprop="url" rel="index">
+                    <span itemprop="name">public</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/public/sort/" class="leancloud_visitors" data-flag-title="C++几种排序算法">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="几种排序算法加代码"><a href="#几种排序算法加代码" class="headerlink" title="几种排序算法加代码"></a>几种排序算法加代码</h2><a id="more"></a>
+<pre><code>插入排序Insertion-sort(A)
+复杂度：　O(N^2)
+author: haining
+ data : 2019-10-30
+</code></pre><p><b>插入排序</b>就像打扑克牌时的抓牌过程一样，假设刚开始手里只有一张牌（数组的开始元素）．</p>
+<p>之后我每当摸一张牌（从数组取出下一个元素），就从手里存在的最后一张牌开始，依次往前找,<br>如果新摸的这张牌比当前看的手里的牌要小，则把当前看的这张牌往后移动一个位置，再继续往前找．　// A[pre+1] = A[pre]</p>
+<p>直到看到一张牌X比新摸的这张小，说明新摸的牌应该在这张牌的后边插入．此时X后边的牌都往后移动了一个位置，把新摸的牌直接插入到腾出来的这个位置即可．// A[pre+1] = now;</p>
+<p>每次新摸一张牌，都重复上述过程，最终就得到排序后的结果．</p>
+<p>这么做的合理性在于，从一开始摸牌就保证了，每次摸牌之前，手里的牌都是已经排好序的，所以可以按次序访问手里的牌，插入到合适的位置．</p>
+<p>最差情况下，数组是逆序的，复杂度为 1 + 2 + 3 + 4 + … + N = n(n+1)/2 .一般认为复杂度为 N^2 .</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insertion_sort</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; r; j++)&#123;</span><br><span class="line">		<span class="keyword">int</span> now = A[j];</span><br><span class="line">		<span class="keyword">int</span> pre = j - <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">while</span>(pre &gt;= <span class="number">0</span> &amp;&amp; A[pre] &gt; now)&#123;</span><br><span class="line">			A[pre+<span class="number">1</span>] = A[pre];</span><br><span class="line">			pre--;</span><br><span class="line">		&#125;</span><br><span class="line">		A[pre+<span class="number">1</span>] = now;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><b>冒泡排序</b>，顾名思义就像是冒泡的过程，遍历ｎ次数组（ｎ为数组元素个数），每次把最小的元素冒泡到正确位置．</p>
+<p>过程为：</p>
+<p>每次遍历，从数组末尾开始递减进行．也就是说，末尾元素和前一个元素比较，前一元素和前前元素再比较，以此类推．如果后一元素比前一元素小，则两元素位置互换．否则不作操作．<br>这样，每次比较都会把小数放到前边，最终，就把最小的数推到了最前边．</p>
+<p>重复上述过程ｎ次，数组得到排序．注意到这种算法的复杂度是 1 + 2 + 3 + … + n-1 = (n^2)/2 .</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bubble_sort</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; r; i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = r - <span class="number">1</span>; j &gt; i; j--)&#123;</span><br><span class="line">			<span class="keyword">if</span>(A[j] &lt; A[j<span class="number">-1</span>])&#123;</span><br><span class="line">				<span class="keyword">int</span> tmp = A[j<span class="number">-1</span>];</span><br><span class="line">				A[j<span class="number">-1</span>] = A[j];</span><br><span class="line">				A[j] = tmp;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><b>快速排序</b>采用分治的思想，任意选定一个数作为锚点（通常是数组的第一个数l，或者最后一个数r，或者中间位置的数(l+r+1)/2）．</p>
+<p>这里选定中间位置的数为锚点，遍历数组，那么肯定会存在一个位置，在这个位置之前的数全部小于锚点，位置之后的数全部大于锚点．</p>
+<p>这里用了一种比较优雅的找位置的方法，设定了两个指针，同时向中间走，遇到不符合以上要求的位置则停下，两个指针的值交换，然后继续．</p>
+<p>找到这个位置之后，把从数组开始到此位置的子数组再进行函数递归调用，这样，直到子数组只剩两个数或者一个数，那么左边的数组就排好了；</p>
+<p>再把从该位置到结束位置的子数组进行函数递归调用，同理，右边的数组也就有序了．完成排序过程．</p>
+<p>复杂度为　O(Nlog(2/n)).</p>
+<p>注意，这种方法会有很多边界问题，不加注意会进入死循环．比如当锚点选择数组第一个数ｌ的时候，递归调用quick_sort(A,l,i－１);quick_sort(A,i,r)就会出错陷入死循环，<br>可以自己用{1, 2}这个数组跑一下感受一下．这种情况改成(A,l,j);(A,j＋１,r)就不会出问题．同样，当锚点选择数组最后一个数ｒ的时候，<br>递归调用quick_sort(A,l,ｊ);quick_sort(A,j+1,r)就会出错陷入死循环.</p>
+<p>更省事的一种方法可以不用双指针，每次迭代多开两个数组ａ，ｂ，一个存小的数，一个存大的数，然后把a,b作为参数传进递归，一样的效果，只是多了一些开销．</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quick_sort</span><span class="params">(<span class="keyword">int</span> A[], <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l &gt;= r) <span class="keyword">return</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> x = A[(l+r+<span class="number">1</span>)/ <span class="number">2</span>], i = l - <span class="number">1</span>, j = r + <span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(i &lt; j)&#123;</span><br><span class="line">        <span class="keyword">do</span> i++; <span class="keyword">while</span>(A[i] &lt; x);</span><br><span class="line">        <span class="keyword">do</span> j--; <span class="keyword">while</span>(A[j] &gt; x);</span><br><span class="line">        <span class="keyword">if</span>(i &lt; j) swap(A[i],A[j]);</span><br><span class="line">    &#125;</span><br><span class="line">    quick_sort(A,l,i - <span class="number">1</span>);</span><br><span class="line">    quick_sort(A,i,r);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> A[<span class="number">100005</span>];</span><br><span class="line">	<span class="keyword">int</span> num = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">int</span> index;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;num);</span><br><span class="line">	<span class="keyword">for</span>(index = <span class="number">0</span>; index &lt; num; index++)</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;A[index]);</span><br><span class="line"></span><br><span class="line">	quick_sort(A,<span class="number">0</span>,index<span class="number">-1</span>);</span><br><span class="line">	<span class="comment">// insertion_sort(A,index);</span></span><br><span class="line">	<span class="comment">// bubble_sort(A,index);</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; index; i++) <span class="built_in">printf</span>(<span class="string">"%d "</span>,A[i]);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/［技术-备忘录］/" rel="tag"># ［技术,备忘录］</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/public/13_Roman_to_Integer/" rel="next" title="Leetcode | Roman to Integer">
+                <i class="fa fa-chevron-left"></i> Leetcode | Roman to Integer
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -381,6 +526,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -401,8 +550,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -484,6 +642,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#几种排序算法加代码"><span class="nav-text">几种排序算法加代码</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
